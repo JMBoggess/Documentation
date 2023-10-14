@@ -1,7 +1,7 @@
 # Azure Web App: Conda
 Conda is my prefered python package and environment manager
 - I prefer miniconda
-  - It is a leightweight version of Anaconda
+  - It is a lightweight version of Anaconda
   - In the future, this document may go over installing and setting up miniconda on a Windows device
 
 The setup we are doing here is for local development of the web app
