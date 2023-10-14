@@ -23,3 +23,21 @@ References:
 
 ## Enable Refresh Tokens
 The above, by default, does not create refresh tokens
+
+[Work with OAuth tokens in Azure App Service authentication](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-oauth-tokens)
+
+See the Refresh auth tokens > Microsoft section for how to configure your app to enable refresh tokens. In essence:
+- Go to: [https://resources.azure.com/](https://resources.azure.com/)
+- Select Read/Write at the top of the page (as you will be editing)
+- On the left, browse to: subscriptions > <subscription_name> > resourceGroups > <resource_group_name> > providers > Microsoft.Web > sites > <app_name> > config > authsettingsV2.
+- Click Edit and modify the following property
+
+```json
+"identityProviders": {
+  "azureActiveDirectory": {
+    "login": {
+      "loginParameters": ["scope=openid profile email offline_access"]
+    }
+  }
+}
+```
