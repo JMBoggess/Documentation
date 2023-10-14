@@ -10,13 +10,13 @@ The App Services passes authentication objects in the response headers to the ap
 
 | Header | Description |
 | --- | --- |
-| X-Ms-Client-Principal-Name |  jboggess@greymatterconcepts.net	
-X-Ms-Client-Principal-Id	b18769e5-25c7-49c6-a386-1d686ccbedb6	
-X-Ms-Client-Principal-Idp	aad	
-X-Ms-Client-Principal	long token-like string	
-X-Ms-Token-Aad-Access-Token	long token string	
-X-Ms-Token-Aad-Expires-On	2023-10-03T15:08:43.6226525Z	
-X-Ms-Token-Aad-Id-Token	long token-like string
+| X-Ms-Client-Principal-Name |  Email |	
+| X-Ms-Client-Principal-Id | Microsoft Entry Object ID |
+| X-Ms-Client-Principal-Idp | aad |
+| X-Ms-Client-Principal | |
+| X-Ms-Token-Aad-Access-Token | |
+| X-Ms-Token-Aad-Expires-On | 2023-10-03T15:08:43.6226525Z | 
+| X-Ms-Token-Aad-Id-Token | |
 
 References:
 - [Work with user identities in Azure App Service authentication](https://learn.microsoft.com/en-us/azure/app-service/configure-authentication-user-identities)
