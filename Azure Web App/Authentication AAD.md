@@ -31,6 +31,8 @@ See the Refresh auth tokens > Microsoft section for how to configure your app to
 - Select Read/Write at the top of the page (as you will be editing)
 - On the left, browse to: subscriptions > <subscription_name> > resourceGroups > <resource_group_name> > providers > Microsoft.Web > sites > <app_name> > config > authsettingsV2.
 - Click Edit and modify the following property
+  - After modifying, click Put
+  - Essentially, add the "loginParameters" line to the "login" dictionary
 
 ```json
 "identityProviders": {
