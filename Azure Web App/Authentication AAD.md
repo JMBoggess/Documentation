@@ -43,3 +43,9 @@ See the Refresh auth tokens > Microsoft section for how to configure your app to
   }
 }
 ```
+
+### Logout
+If you have already logged in to the site, you may first have to logout in order to generate the refresh token.
+
+Go to "/.auth/logout" of your web site to logout
+- Example: https://yoursite.azurewebsites.net/.auth/logout
