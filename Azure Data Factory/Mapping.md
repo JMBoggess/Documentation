@@ -3,44 +3,33 @@
 ## SQL Database Types
 
 ### Source
-When SQL database is used as a source
+When SQL database is used, specify the physcialType to indicate the type of database field.
+- Decimal
+  - Scale: refers to the number of digits after the decimal place
+  - Precision: the total number of digits
 
-Example JSON:
+Example 1: DateTime
 ```
 "source": {
     "name": "column_name",
-    "physicalType": "datetime",
-    "scale": 3,
-    "precision": 23
+    "physicalType": "datetime"
 }
 ```
 
-| Data Type | physicalType | scale | precision |
-| --- | --- | --- | --- |
-| Date | date | n/a | n/a |
-| DateTime | datetime | 3 | 23 |
-| Decimal | decimal | # of decimal places | # of total digits |
-| Int32 | int | n/a | 10 |
-| Int64 | int | n/a | 19 | 
-| String | varchar | n/a | n/a |
-
-### Sink
-When SQL database is used as a sink
-
-Example JSON:
+Example 2: String
 ```
 "sink": {
     "name": "column_name",
-    "scale": 3,
-    "precision": 10
+    "physicalType": "varchar"
 }
 ```
 
-| Data Type | scale | precision |
-| --- | --- | --- |
-| Date | n/a | n/a |
-| DateTime | 3 | 23 |
-| Double/Decimal | # of decimal places | # of total digits |
-| Int32 | n/a | 10 |
-| Int64 | n/a | 19 | 
-| String | n/a | n/a |
+Example 3: Decimal
+```
+"sink": {
+    "name": "column_name",
+    "physicalType": "decimal",
+    "scale": 2,
+    "precision": 8
+}
+```
