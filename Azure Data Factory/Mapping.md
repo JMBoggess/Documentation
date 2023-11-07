@@ -16,7 +16,7 @@ Example JSON:
 ```
 
 | Data Type | physicalType | scale | precision |
-| --- | --- | --- |
+| --- | --- | --- | --- |
 | Date | date | n/a | n/a |
 | DateTime | datetime | 3 | 23 |
 | Decimal | decimal | # of decimal places | # of total digits |
